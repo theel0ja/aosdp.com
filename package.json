@@ -1,0 +1,19 @@
+{
+  "name": "aosdp.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:AOSDP/aosdp.com.git",
+  "author": "makmm <duckifier@protonmail.ch>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "@ibm/plex": "^1.1.4"
+  }
+}
