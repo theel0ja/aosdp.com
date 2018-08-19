@@ -1,0 +1,53 @@
+/* $font-prefix: './node_modules/@ibm/plex' */
+@import './node_modules/@ibm/plex/css/ibm-plex.min.css';
+
+:root {
+  --mono-font: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 20vh; */
+  flex-direction: column;
+}
+
+h2 {
+  font-family: var(--mono-font);
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: var(--mono-font);
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.logo {
+  width: 80vw;
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 24px;
+  }
+  .logo {
+    width: 40vw;
+  }
+}
