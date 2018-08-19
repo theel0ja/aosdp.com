@@ -1,6 +1,8 @@
 $font-prefix: './node_modules/@ibm/plex'
 @import 'node_modules/@ibm/plex/scss/ibm-plex.scss'
 
+$mono-font: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace
+
 *
   margin: 0
   padding: 0
@@ -17,9 +19,13 @@ main
   margin-top: 20vh
   flex-direction: column
 
+h2
+  font-size: 2em
+  font-family: $mono-font
+
 h3
-  font-size: 50px
-  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace
+  font-size: 1.5em
+  font-family: $mono-font
   // font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif
   font-style: italic
 
