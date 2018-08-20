@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.9.7"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "@ibm/plex": "^1.1.4"
   }
 }

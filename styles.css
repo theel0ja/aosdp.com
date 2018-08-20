@@ -1,9 +1,11 @@
 /* $font-prefix: './node_modules/@ibm/plex' */
 @import './node_modules/@ibm/plex/css/ibm-plex.min.css';
+@import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 :root {
+  --sans-font: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   --mono-font: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 * {
@@ -14,23 +16,48 @@
 body {
   background: #111;
   color: white;
-  width: 100vw;
-  height: 100vh;
 }
 
-main {
-  height: 100vh;
+.section {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   /* margin-top: 20vh; */
   flex-direction: column;
+  margin: 0 5vw;
+}
+
+.icon-link {
+  color: white;
+  font-size: 2rem;
+}
+
+.features {
+  /* flex-direction: row; */
+}
+
+.feature {
+  width: 100%;
+  font-family: var(--sans-font);
+}
+
+.feature * {
+  margin: 10px;
+}
+
+.feature p {
+  font-size: .7em;
+}
+
+.feature .icon {
+  font-size: 5em;
 }
 
 h2 {
   font-family: var(--mono-font);
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -49,5 +76,8 @@ h3 {
   }
   .logo {
     width: 40vw;
+  }
+  .features {
+    flex-direction: row;
   }
 }
